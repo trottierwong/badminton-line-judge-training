@@ -26,6 +26,29 @@
   #certificate .certificate-signature span{font-size:10px!important;line-height:1.2!important}
   #certificate .small{font-size:9px!important}
 }
+
+/* Balanced single-page certificate, with content distributed vertically. */
+@media print{
+  #certificate{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:space-evenly!important;
+    height:185mm!important;
+    min-height:0!important;
+    max-height:185mm!important;
+    padding:8mm 13mm!important;
+  }
+  #certificate:before{inset:7px!important}
+  #certificate .cert-logo{flex:0 0 auto!important;width:31mm!important;max-width:31mm!important;margin:0 auto!important}
+  #certificate .cert-logo img{width:100%!important;height:auto!important}
+  #certificate p{margin:0!important;line-height:1.35!important}
+  #certificate h2{margin:0!important;font-size:29px!important}
+  #certificate .person{margin:0!important;padding:4px 18px!important;min-width:42%!important}
+  #certificate .certificate-signature{flex:0 0 auto!important;margin:0 auto!important}
+  #certificate .certificate-signature img{width:35mm!important;height:15mm!important}
+  #certificate .small{margin:0!important}
+}
 </style></head><body><header><div>VANCOUVER RACQUETS CLUB</div><h1>Badminton Line Judge Training</h1><p>Interactive volunteer training • Approximately 5–10 minutes</p></header><main class="wrap">
 <section id="intro" class="card"><h2>Welcome, volunteers!</h2><p>Learn to judge whether a shuttle lands IN or OUT, use clear hand signals, and handle situations where you cannot see the landing.</p><p><strong>Key rule:</strong> A shuttle touching any part of the relevant boundary line is IN. Judge where the shuttle first contacts the floor, not where it rolls or where feathers extend.</p><p>Watch your assigned line and stay impartial. Make the appropriate signal only after the shuttle has landed; do not anticipate the umpire’s decision on other faults. If you genuinely cannot see the landing, do not guess.</p><button onclick="show('signals')">Start training →</button></section>
 <section id="signals" class="card hidden"><h2>Lesson 1 — Line judge signals</h2><p>The realistic signal guide below shows the hands and arm positions. Official line judges should follow the referee's briefing and current BWF instructions.</p><figure class="signal-guide"><img src="Badminton%20Line%20Judge%20Signal%20Guide.png" alt="Three realistic VRC badminton line judges demonstrating IN with the right hand pointing to the line, OUT with both arms horizontal, and UNSIGHTED with both hands covering both eyes." width="1536" loading="eager"><figcaption>IN: Point toward the line with your right hand; no verbal call. &nbsp; OUT: Call “OUT!” and extend both arms horizontally. &nbsp; UNSIGHTED: Cover both eyes with both hands; never guess.</figcaption></figure><button onclick="show('lines')">Next lesson →</button></section>
